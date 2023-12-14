@@ -1,0 +1,1 @@
+This is a barebone gambling site user interface with the intention of simulating real life online gambling scenarios. Use it only for experimental purposes.
