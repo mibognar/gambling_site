@@ -1,10 +1,10 @@
 
 function fillsports(sport){
     var sport = sport
-    console.log(`../sportsdata/${sport}_data.csv`)
+    console.log(`sportsdata/${sport}_data.csv`)
         // Fetch CSV file
 
-        fetch(`../sportsdata/${sport}_data.csv`)
+        fetch(`sportsdata/${sport}_data.csv`)
             .then(response => response.text())
             .then(data => {
                 // Parse CSV
@@ -35,7 +35,7 @@ function fillsports(sport){
                             rowDiv.appendChild(colDiv);
                         }else{
                             var input = document.createElement('input')
-                            input.className = 'btn-check'
+                            input.className = 'btn-check betbtn'
                             input.setAttribute("type","radio")
                             input.setAttribute("name","options")
                             input.setAttribute("id",`rdbtn${index}${i}`)
