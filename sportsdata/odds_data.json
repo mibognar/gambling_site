@@ -1,14 +1,14 @@
 {
-  "football": [
+  "labdarúgás": [
     {"hazai": "Finland", "vendég": "Romania", "odds_hazai": 1.20, "odds_döntetlen": 2.45, "odds_vendég": 6.20},
     {"hazai": "France", "vendég": "Germany", "odds_hazai": 1.20, "odds_döntetlen": 2.45, "odds_vendég": 6.20}
   ],
-  "handball": [
+  "kosárlabda": [
     {"hazai": "Finland", "vendég": "Romania", "odds_hazai": 1.20, "odds_döntetlen": 2.45, "odds_vendég": 6.20},
     {"hazai": "France", "vendég": "Germany", "odds_hazai": 1.20, "odds_döntetlen": 2.45, "odds_vendég": 6.20}
   ],
-  "tennis": [
+  "tenisz": [
     {"hazai": "Nadal", "vendég": "Federer", "odds_hazai": 1.20, "odds_vendég": 6.20},
-    {"hazai": "Williams", "vendég": "Sarapova", "odds_hazai": 1.20,"odds_vendég": 6.20}
+    {"hazai": "Williams", "vendég": "Sharapova", "odds_hazai": 1.20,"odds_vendég": 6.20}
   ]
 }

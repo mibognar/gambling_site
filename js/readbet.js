@@ -1,24 +1,21 @@
 function readbet() {
-        const radioButtons = document.querySelectorAll('.betbtn:checked');
+        const radioButton = document.querySelector('.betbtn:checked');
+        bet_value = parseInt(document.getElementById("cashform").value)
+        console.log(bet_value)
+
         
-        if (radioButtons.length === 0) {
+        if (radioButton === null) {
             console.log('No radio buttons are checked.');
+            alert ("Kérjük válassz ki egy fogadást!")
             return;
+        }else if (isNaN(bet_value) || bet_value < 1 || bet_value > 1000){
+            alert("Kérjük válassz egy összeget 0 és 1000 forint között!")
+            return;
+        }else{
+            bet_sport = radioButton.getAttribute("sport")
+            bet_matchup = radioButton.getAttribute("matchup")
+            bet_key = radioButton.getAttribute("betkey").replace('odds_', '')
+            bet_odds = radioButton.getAttribute("betodds")
+            console.log(bet_sport + " | " + bet_matchup + " | " + bet_key + " | " + bet_odds + " ||| " + bet_value)
         }
-
-        radioButtons.forEach((radio) => {
-            const parent = radio.parentElement;
-            const grandparent = parent.parentElement;
-            const great_grandparent = grandparent.parentElement;
-            const very_great_grandparent = great_grandparent.parentElement;
-        
-            const gridContainer = great_grandparent;
-            const gridRow = grandparent;
-            const gridColumn = parent
-            console.log(gridColumn)
-            const colindex = Array.from(gridRow.children).indexOf(gridColumn);
-            const rowIndex = Array.from(gridContainer.children).indexOf(gridRow);
-
-            console.log(`Checked radio button position: Row ${rowIndex}, Column ${colindex}`);
-        });
-    }
+}
