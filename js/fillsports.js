@@ -3,9 +3,9 @@ function fillsports(sport){
     var sport = sport
         // Fetch CSV file
         document.getElementById('sportname').innerHTML = sport.toUpperCase()
-        document.getElementById('bet-button').style = "display: block"
-        document.getElementById('bet-form').style = "display: flex"
-        document.getElementById('choose-text').style = "display: none"
+        document.getElementById('bet-button').style = "visibility: visible"
+        document.getElementById('bet-form').style = "visibility: visible"
+        document.getElementById('choose-text').style = "visibility: hidden"
         fetch(`../sportsdata/odds_data.json`)
         .then(response => response.json())
         .then(data => {
@@ -18,19 +18,20 @@ function fillsports(sport){
                 
             sportData.forEach((rowData, index) => {
                 const rowDiv = document.createElement('div');
-                rowDiv.className = 'row-lg-2 d-flex justify-content-center';
+                rowDiv.className = 'justify-content-center';
 
 
                 // Dynamically create columns based on JSON keys
                 Object.keys(rowData).forEach(key => {
-                    const colDiv = document.createElement('div');
-                    colDiv.className = 'col-sm-2 btn-group text-center justify-content-center';
-                    colDiv.style = 'margin-top: 10px';
+                    
 
                     // Create and append label and input elements
                     
 
                     if (key.startsWith('odds_')) {
+                        const colDiv = document.createElement('div');
+                        colDiv.className = 'col-4 col-sm-2 btn-group text-center';
+                        colDiv.style = 'margin-top: 10px; padding: 0px';
                         var input = document.createElement('input');
                         input.className = 'btn-check betbtn';
                         input.setAttribute("type", "radio");
@@ -47,14 +48,27 @@ function fillsports(sport){
                         label.innerHTML = `<strong>${key.replace('odds_', '').toUpperCase()}</strong> <br> ${rowData[key]}`;
                         colDiv.appendChild(input);
                         colDiv.appendChild(label);
+                        rowDiv.appendChild(colDiv);
+                    }else if (key.startsWith('info')){
+                        const colDiv = document.createElement('div');
+                        colDiv.className = 'col-12 col-sm-2 btn-group text-center justify-content-center';
+                        colDiv.style = 'margin-top: 10px';
+                       var label = document.createElement('p');
+                        label.innerHTML = `<strong>${rowData[key]}</strong>`;
+                        colDiv.appendChild(label);
+                        rowDiv.appendChild(colDiv);
                     }
                     else{
+                        const colDiv = document.createElement('div');
+                        colDiv.className = 'col-6 col-sm-2 btn-group text-center justify-content-center';
+                        colDiv.style = 'margin-top: 10px';
                        var label = document.createElement('p');
                         label.innerHTML = `<strong>${key.replace('odds_', '').toUpperCase()}</strong> <br> ${rowData[key]}`;
-                        colDiv.appendChild(label); 
+                        colDiv.appendChild(label);
+                        rowDiv.appendChild(colDiv); 
                     }
 
-                    rowDiv.appendChild(colDiv);
+                    
                 });
 
                 csvGrid.appendChild(rowDiv);

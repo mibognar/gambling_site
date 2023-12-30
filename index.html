@@ -5,38 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fogadás kísérlet</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
   </head>
   <body>
     <script src="js/fillsports.js"></script>
     <script src="js/readbet.js"></script> 
-  <div class="container text-center">
-    <div class="dropdown-center text-center" style="padding: 10px; margin-top: 10px">
-      <button id="sportname" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" data-bs-toggle="dropdown" aria-expanded="false">
-        Sportágak
-      </button>
-      <div id="dropmenu" class="dropdown-menu justify-content-center">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="dropdown-center text-center" style="padding: 10px; margin-top: 10px">
+            <button id="sportname" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" data-bs-toggle="dropdown" aria-expanded="false">
+              Sportágak
+            </button>
+            <div id="dropmenu" class="dropdown-menu justify-content-center"></div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row">
+          <div class="col-12 text-center">
+          <div class="row text-center" id="csvGrid" data-toggle="buttons"></div>
+        </div>
+      </div>
+  
+      <div id="choose-text" class="row">
+        <div class="col-12 text-center">
+          <h1 >Kérjük válasszon sportágat!</h1>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-4 col-sm-6 mx-auto text-center">
+          <div class="container text-center mx-auto my-auto" style="padding: 10px; margin-top: 10px; width: 10%; visibility: hidden" id="bet-form">
+            <div class="form-group" >
+              <input type="cash" class="form-control" id="cashform" maxlength="4" aria-describedby="cashform" placeholder="Tét" pattern="\d{4}" style="text-align: center;">
+              <small id="cashHelp" class="form-text text-muted">Maximális összeg: 1000 Ft</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 text-center">
+          <div id="bet-button" class="container text-center mx-auto my-auto" style="padding: 10px; margin-top: 10px; visibility: hidden;">
+            <button class="btn btn-primary btn-lg" onclick="readbet();">Fogadás</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="d-flex justify-content-center" style="padding: 10px; margin-top: 10px">
-    <div class="container text-center">
-      <div class="row text-center" id="csvGrid" data-toggle="buttons"></div>
-    </div>
-  </div>
-  <div id="choose-text" class="container justify-content-center text-center">
-    <h1 >Kérjük válasszon sportágat!</h1>
-  </div>
-  <div class="container text-center mx-auto my-auto" style="padding: 10px; margin-top: 10px; width: 10%; display: none" id="bet-form">
-    <div class="form-group" >
-      <input type="cash" class="form-control" id="cashform" maxlength="4" aria-describedby="cashform" placeholder="Tét" pattern="\d{4}" style="text-align: center;">
-      <small id="cashHelp" class="form-text text-muted">Maximális összeg: 1000 Ft</small>
-    </div>
-  </div>
-  <div id="bet-button" class="container text-center mx-auto my-auto" style="padding: 10px; margin-top: 10px; display: none;">
-    <button class="btn btn-primary btn-lg" onclick="readbet();">Fogadás</button>
-  </div>
   <script src="js/readsports.js"></script>
   </body>
 </html>

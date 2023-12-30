@@ -1,0 +1,9 @@
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem; /* Smaller font size on small screens */
+  }
+  .btn-lg {
+    padding: .5rem 1rem; /* Smaller buttons on small screens */
+    font-size: 1rem;
+  }
+}

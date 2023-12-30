@@ -1,14 +1,41 @@
 {
-  "labdarúgás": [
-    {"hazai": "Finland", "vendég": "Romania", "odds_hazai": 1.20, "odds_döntetlen": 2.45, "odds_vendég": 6.20},
-    {"hazai": "France", "vendég": "Germany", "odds_hazai": 1.20, "odds_döntetlen": 2.45, "odds_vendég": 6.20}
+   "labdarúgás": [
+    {"hazai": "Real Madrid", "vendég": "Manchester City", "info": "Champions League, 01.03. 20:45", "odds_hazai": 2.70, "odds_döntetlen": 3.40, "odds_vendég": 2.50},
+    {"hazai": "Ferencváros", "vendég": "MTK Budapest", "info": "NB1, 01.04. 18:00", "odds_hazai": 1.80, "odds_döntetlen": 3.50, "odds_vendég": 4.20},
+    {"hazai": "Paris Saint-Germain", "vendég": "Juventus", "info": "Champions League, 01.03. 20:45", "odds_hazai": 2.20, "odds_döntetlen": 3.30, "odds_vendég": 3.10},
+    {"hazai": "Barcelona", "vendég": "Liverpool", "info": "Champions League, 01.04. 20:45", "odds_hazai": 2.50, "odds_döntetlen": 3.25, "odds_vendég": 2.80},
+    {"hazai": "Debreceni VSC", "vendég": "Paksi FC", "info": "NB1, 01.05. 16:00", "odds_hazai": 2.00, "odds_döntetlen": 3.30, "odds_vendég": 3.50},
+    {"hazai": "Inter Milan", "vendég": "Borussia Dortmund", "info": "Champions League, 01.06. 20:45", "odds_hazai": 2.15, "odds_döntetlen": 3.20, "odds_vendég": 3.40},
+    {"hazai": "Videoton FC", "vendég": "Újpest FC", "info": "NB1, 01.06. 18:00", "odds_hazai": 2.10, "odds_döntetlen": 3.25, "odds_vendég": 3.40},
+    {"hazai": "Atletico Madrid", "vendég": "AC Milan", "info": "Champions League, 01.07. 20:45", "odds_hazai": 2.25, "odds_döntetlen": 3.10, "odds_vendég": 3.30},
+    {"hazai": "Zalaegerszegi TE", "vendég": "Mezőkövesd Zsóry FC", "info": "NB1, 01.07. 16:00", "odds_hazai": 2.20, "odds_döntetlen": 3.15, "odds_vendég": 3.25},
+    {"hazai": "Napoli", "vendég": "Benfica", "info": "Champions League, 01.08. 20:45", "odds_hazai": 2.20, "odds_döntetlen": 3.30, "odds_vendég": 3.15},
+    {"hazai": "Honvéd", "vendég": "Gyirmót FC Győr", "info": "NB1, 01.08. 18:00", "odds_hazai": 1.90, "odds_döntetlen": 3.40, "odds_vendég": 4.00}
   ],
   "kosárlabda": [
-    {"hazai": "Finland", "vendég": "Romania", "odds_hazai": 1.20, "odds_döntetlen": 2.45, "odds_vendég": 6.20},
-    {"hazai": "France", "vendég": "Germany", "odds_hazai": 1.20, "odds_döntetlen": 2.45, "odds_vendég": 6.20}
+    {"hazai": "USA", "vendég": "Spain", "odds_hazai": 1.30, "odds_döntetlen": 2.50, "odds_vendég": 4.20},
+    {"hazai": "Serbia", "vendég": "France", "odds_hazai": 1.50, "odds_döntetlen": 2.70, "odds_vendég": 3.60},
+    {"hazai": "Lithuania", "vendég": "Italy", "odds_hazai": 1.40, "odds_döntetlen": 2.60, "odds_vendég": 3.80},
+    {"hazai": "Greece", "vendég": "Turkey", "odds_hazai": 1.45, "odds_döntetlen": 2.55, "odds_vendég": 3.70},
+    {"hazai": "Argentina", "vendég": "Brazil", "odds_hazai": 1.35, "odds_döntetlen": 2.50, "odds_vendég": 4.00},
+    {"hazai": "Australia", "vendég": "New Zealand", "odds_hazai": 1.25, "odds_döntetlen": 2.45, "odds_vendég": 4.50},
+    {"hazai": "Canada", "vendég": "Germany", "odds_hazai": 1.55, "odds_döntetlen": 2.65, "odds_vendég": 3.50},
+    {"hazai": "Slovenia", "vendég": "Croatia", "odds_hazai": 1.40, "odds_döntetlen": 2.60, "odds_vendég": 3.80},
+    {"hazai": "Russia", "vendég": "Latvia", "odds_hazai": 1.50, "odds_döntetlen": 2.70, "odds_vendég": 3.60},
+    {"hazai": "Philippines", "vendég": "Japan", "odds_hazai": 1.45, "odds_döntetlen": 2.55, "odds_vendég": 3.70},
+    {"hazai": "Finland", "vendég": "Estonia", "odds_hazai": 1.35, "odds_döntetlen": 2.50, "odds_vendég": 4.00}
   ],
   "tenisz": [
-    {"hazai": "Nadal", "vendég": "Federer", "odds_hazai": 1.20, "odds_vendég": 6.20},
-    {"hazai": "Williams", "vendég": "Sharapova", "odds_hazai": 1.20,"odds_vendég": 6.20}
+    {"hazai": "Djokovic", "vendég": "Murray", "odds_hazai": 1.50, "odds_vendég": 2.60},
+    {"hazai": "Thiem", "vendég": "Zverev", "odds_hazai": 1.70, "odds_vendég": 2.20},
+    {"hazai": "Medvedev", "vendég": "Tsitsipas", "odds_hazai": 1.80, "odds_vendég": 2.00},
+    {"hazai": "Berrettini", "vendég": "Rublev", "odds_hazai": 1.85, "odds_vendég": 1.95},
+    {"hazai": "Fognini", "vendég": "Goffin", "odds_hazai": 1.90, "odds_vendég": 1.90},
+    {"hazai": "Shapovalov", "vendég": "Raonic", "odds_hazai": 1.75, "odds_vendég": 2.05},
+    {"hazai": "Monfils", "vendég": "Nishikori", "odds_hazai": 1.80, "odds_vendég": 2.00},
+    {"hazai": "Schwartzman", "vendég": "Bautista Agut", "odds_hazai": 1.85, "odds_vendég": 1.95},
+    {"hazai": "Cilic", "vendég": "Anderson", "odds_hazai": 1.65, "odds_vendég": 2.25},
+    {"hazai": "Kyrgios", "vendég": "De Minaur", "odds_hazai": 1.60, "odds_vendég": 2.30},
+    {"hazai": "Wawrinka", "vendég": "Isner", "odds_hazai": 1.70, "odds_vendég": 2.20}
   ]
 }
