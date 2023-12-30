@@ -1,3 +1,4 @@
+const searchParams = new URLSearchParams(window.location.search);
 fetch(`../sportsdata/odds_data.json`)
         .then(response => response.json())
         .then(data => {

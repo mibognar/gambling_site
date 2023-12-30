@@ -7,3 +7,29 @@
     font-size: 1rem;
   }
 }
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensures the body takes full viewport height */
+}
+
+.container-fluid {
+  max-height: 100%; /* Limit container to viewport height */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+}
+.scrollable-grid {
+  flex-grow: 1; /* Takes up all available space */
+  max-height: calc(80vh - 70px); /* Adjust this value based on your needs */
+  overflow-y: auto; /* Enables vertical scrolling */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+}
+
+.bet-section {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  /*padding: 10px;*/
+  height: 20vh; /* Adjust this based on your actual bet section height */
+}

@@ -25,8 +25,8 @@
       </div>
   
       <div class="row">
-          <div class="col-12 text-center">
-          <div class="row text-center" id="csvGrid" data-toggle="buttons"></div>
+        <div class="col-12 text-center">
+          <div class="row text-center scrollable-grid" id="csvGrid" data-toggle="buttons"></div>
         </div>
       </div>
   
@@ -36,22 +36,23 @@
         </div>
       </div>
 
-
-      <div class="row">
-        <div class="col-md-4 col-sm-6 mx-auto text-center">
-          <div class="container text-center mx-auto my-auto" style="padding: 10px; margin-top: 10px; width: 10%; visibility: hidden" id="bet-form">
-            <div class="form-group" >
-              <input type="cash" class="form-control" id="cashform" maxlength="4" aria-describedby="cashform" placeholder="Tét" pattern="\d{4}" style="text-align: center;">
-              <small id="cashHelp" class="form-text text-muted">Maximális összeg: 1000 Ft</small>
+      <div class="bet-section">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 mx-auto text-center">
+            <div class="text-center mx-auto my-auto" style="width: 10%; visibility: hidden" id="bet-form">
+              <div class="form-group" >
+                <input type="cash" class="form-control" id="cashform" maxlength="4" aria-describedby="cashform" placeholder="Tét" pattern="\d{4}" style="text-align: center;">
+                <small id="cashHelp" class="form-text text-muted">Maximális összeg: 1000 Ft</small>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="col-12 text-center">
-          <div id="bet-button" class="container text-center mx-auto my-auto" style="padding: 10px; margin-top: 10px; visibility: hidden;">
-            <button class="btn btn-primary btn-lg" onclick="readbet();">Fogadás</button>
+        <div class="row">
+          <div class="col-12 text-center">
+            <div id="bet-button" class="text-center mx-auto my-auto" style="margin-top: 10px; visibility: hidden;">
+              <button class="btn btn-primary btn-lg" onclick="readbet();">Fogadás</button>
+            </div>
           </div>
         </div>
       </div>
