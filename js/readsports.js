@@ -2,7 +2,7 @@ const searchParams = new URLSearchParams(window.location.search);
 var participant_id = searchParams.get('id')
 var cash_out = searchParams.get('cashout')
 var session_id = searchParams.get('sessionid')
-fetch(`../sportsdata/odds_data.json`)
+fetch(`sportsdata/odds_data.json`)
         .then(response => response.json())
         .then(data => {
             // Access specific sport data
