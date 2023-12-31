@@ -1,6 +1,4 @@
 function readbet() {
-    var participant_id = searchParams.get('id')
-    var cash_out = searchParams.get('cashout')
     console.log(`Participant id is: ${participant_id}; Cash-out is: ${cash_out}`)
     const radioButton = document.querySelector('.betbtn:checked');
     bet_value = parseInt(document.getElementById("cashform").value)
@@ -19,6 +17,22 @@ function readbet() {
         bet_matchup = radioButton.getAttribute("matchup")
         bet_key = radioButton.getAttribute("betkey").replace('odds_', '')
         bet_odds = radioButton.getAttribute("betodds")
-        console.log(bet_sport + " | " + bet_matchup + " | " + bet_key + " | " + bet_odds + " ||| " + bet_value)
+        let formData = new FormData()
+        formData.append('participant_id', participant_id)
+        formData.append('session_id', session_id)
+        formData.append('cashout', cash_out)
+        formData.append('sport', bet_sport)
+        formData.append('matchup', bet_matchup)
+        formData.append('option', bet_key)
+        formData.append('odds', bet_odds)
+        formData.append('amount', bet_value)
+        fetch('savedata.php', {
+        method: 'POST',
+        body: formData
+        })
+    .then(response => response.text())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error:', error));
+
     }
 }

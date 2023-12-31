@@ -6,6 +6,9 @@
     padding: .5rem 1rem; /* Smaller buttons on small screens */
     font-size: 1rem;
   }
+  h4 {
+    font-size: 1rem;
+  }
 }
 body, html {
   margin: 0;

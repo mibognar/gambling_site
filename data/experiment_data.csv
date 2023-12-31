@@ -1,0 +1,5 @@
+participant_id,session_id,cashout,sport,matchup,option,odds,amount
+666,test,0,labdarúgás,Honvéd-Gyirmót FC Győr,döntetlen,3.4,500
+666,test,0,kosárlabda,Russia-Latvia,vendég,3.6,500
+666,test,0,labdarúgás,Real Madrid-Manchester City,hazai,2.7,500
+666,test,1,tenisz,Fognini-Goffin,vendég,1.9,950

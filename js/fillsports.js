@@ -6,6 +6,10 @@ function fillsports(sport){
         document.getElementById('bet-button').style = "visibility: visible"
         document.getElementById('bet-form').style = "visibility: visible"
         document.getElementById('choose-text').style = "visibility: hidden"
+        if(cash_out == 1){
+            console.log("cash out is " + cash_out)
+            document.getElementById('cashout').style.visibility = "visible"
+        }
         fetch(`../sportsdata/odds_data.json`)
         .then(response => response.json())
         .then(data => {
