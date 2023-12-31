@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Correct password, proceed to file download
 
         // Specify the file to download
-        $file = 'data/experiment_data.csv'; // Replace with your file path
+        $file = '../data/experiment_data.csv'; // Replace with your file path
 
         // Check if the file exists
         if (file_exists($file)) {
