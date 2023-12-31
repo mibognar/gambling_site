@@ -10,7 +10,7 @@ function fillsports(sport){
             console.log("cash out is " + cash_out)
             document.getElementById('cashout').style.visibility = "visible"
         }
-        fetch(`../sportsdata/odds_data.json`)
+        fetch(`sportsdata/odds_data.json`)
         .then(response => response.json())
         .then(data => {
             // Access specific sport data
