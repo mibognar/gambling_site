@@ -3,3 +3,14 @@ participant_id,session_id,cashout,sport,matchup,option,odds,amount
 666,test,0,kosárlabda,Russia-Latvia,vendég,3.6,500
 666,test,0,labdarúgás,Real Madrid-Manchester City,hazai,2.7,500
 666,test,1,tenisz,Fognini-Goffin,vendég,1.9,950
+null,null,,kosárlabda,Slovenia-Croatia,döntetlen,2.6,500
+null,null,,labdarúgás,Honvéd-Gyirmót FC Győr,döntetlen,3.4,960
+null,null,1,kosárlabda,Lithuania-Italy,döntetlen,2.6,500
+null,null,1,labdarúgás,Barcelona-Liverpool,döntetlen,3.25,1000
+null,null,1,labdarúgás,Barcelona-Liverpool,döntetlen,3.25,1000
+null,null,,E-Sport,G2 Esports-TOP Esports,hazai,2.66,950
+null,null,,Labdarúgás,Genk-RWD Molenbeek,vendég,8.5,1000
+null,null,,Labdarúgás,Sparta Praha-Bohemians 1905,döntetlen,5.5,500
+null,null,,E-Sport,SSC Napoli (Cyclop)-AS Roma (Moby),hazai,2.3,111
+111,null,,Röplabda,Chemik Police-Bielsko-Biala,hazai,2.63,555
+111,null,1,E-Sport,SSC Napoli (Cyclop)-AS Roma (Moby),döntetlen,5.25,555
