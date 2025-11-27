@@ -9,8 +9,8 @@ function readbet() {
         console.log('No radio buttons are checked.');
         alert ("Kérjük válassz ki egy fogadást!")
         return;
-    }else if (isNaN(bet_value) || bet_value < 1 || bet_value > 1000){
-        alert("Kérjük válassz egy összeget 0 és 1000 forint között!")
+    }else if (isNaN(bet_value) || bet_value < 1 || bet_value > 2300){
+        alert("Kérjük válassz egy összeget 0 és 2300 forint között!")
         return;
     }else{
         bet_sport = radioButton.getAttribute("sport")
