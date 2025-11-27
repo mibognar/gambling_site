@@ -1,7 +1,7 @@
 const searchParams = new URLSearchParams(window.location.search);
 var participant_id = searchParams.get('id')
 var cash_out = searchParams.get('cashout')
-var session_id = searchParams.get('sessionid')
+var session_id = searchParams.get('session_id')
 fetch(`sportsdata/tippmix_odds.json`)
         .then(response => response.json())
         .then(data => {

@@ -1,4 +1,8 @@
 <?php
+header("Content-Type: application/json");
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type");
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect and sanitize input data
     $participant_id = filter_input(INPUT_POST, 'participant_id', FILTER_SANITIZE_STRING);
@@ -21,9 +25,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $file = fopen($filePath, "a");
     fwrite($file, $csvLine);
     fclose($file);
-
-    echo "Data submitted successfully.";
+    echo json_encode(["success" => true]);
 } else {
-    echo "Invalid request";
+    echo json_encode(["message" =>"Invalid request"]);
 }
+exit;
+
 ?>

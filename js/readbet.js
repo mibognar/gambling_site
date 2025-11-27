@@ -30,8 +30,13 @@ function readbet() {
         method: 'POST',
         body: formData
         })
-    .then(response => response.text())
-    .then(data => console.log(data))
+    .then(response => response.json())
+    .then(data =>{
+    if (data.success) {
+	console.log("success!")
+	window.location.href = "https://elteppk.eu.qualtrics.com/jfe/form/SV_1zFzEDYDES9VAKq?if_cash_out="+cash_out+"&Response_ID="+participant_id;
+    }else{console.log("nothing")}
+    })
     .catch(error => console.error('Error:', error));
 
     }
