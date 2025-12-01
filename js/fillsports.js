@@ -4,6 +4,7 @@ function fillsports(sport){
         // Fetch CSV file
         document.getElementById('sportname').innerHTML = sport.toUpperCase()
         document.getElementById('bet-button').style = "visibility: visible"
+        document.getElementById('nobet-button').style = "visibility: visible"
         document.getElementById('bet-form').style = "visibility: visible"
         document.getElementById('choose-text').style = "visibility: hidden"
         if(cash_out == 1){

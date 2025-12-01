@@ -41,3 +41,27 @@ function readbet() {
 
     }
 }
+function nobet() {
+    console.log(`Participant id is: ${participant_id}; Cash-out is: ${cash_out}`)    
+        let formData = new FormData()
+        formData.append('participant_id', participant_id)
+        formData.append('session_id', session_id)
+        formData.append('cashout', cash_out)
+        formData.append('sport', "nobet")
+        formData.append('matchup', "nobet")
+        formData.append('option', "nobet")
+        formData.append('odds', "nobet")
+        formData.append('amount', 0)
+        fetch('savedata.php', {
+        method: 'POST',
+        body: formData
+        })
+    .then(response => response.json())
+    .then(data =>{
+    if (data.success) {
+	console.log("success!")
+	window.location.href = "https://elteppk.eu.qualtrics.com/jfe/form/SV_1zFzEDYDES9VAKq?if_cash_out="+cash_out+"&Response_ID="+participant_id;
+    }else{console.log("nothing")}
+    })
+    .catch(error => console.error('Error:', error));
+}

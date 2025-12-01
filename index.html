@@ -53,14 +53,22 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-12 text-center">
-            <div id="bet-button" class="text-center mx-auto my-auto" style="margin-top: 10px; visibility: hidden;">
-              <button class="btn btn-primary btn-lg" onclick="readbet();">Fogadás</button>
-            </div>
-          </div>
-        </div>
        
+     <div class="d-flex justify-content-center mt-4" style="gap: 12px;">
+  <button id="bet-button"
+          class="btn btn-primary btn-lg"
+          onclick="readbet();"
+          style="visibility: hidden; width: 160px;">
+    Fogadás
+  </button>
+
+  <button id="nobet-button"
+          class="btn btn-danger btn-lg"
+          onclick="nobet();"
+          style="visibility: hidden; width: 160px;">
+    Nem szeretnék fogadni
+  </button>
+</div>    
       </div>
     </div>
   <script src="js/readsports.js"></script>
